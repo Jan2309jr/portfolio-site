@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #0f003e;
+}
+
+/* ========== Home Section ========== */
+.home {
+  background-image: url('hero-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #ffffff;
+  height: 100vh;
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ========== Navbar ========== */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0f003e;
+  border-radius: 30px;
+  padding: 10px 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li {
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+/* Hamburger Icon */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Mobile Nav Menu */
+.mobile-nav {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  background: #1b014e;
+  padding: 30px 20px;
+  z-index: 5;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.mobile-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.mobile-nav ul li {
+  padding: 15px 0;
+  font-size: 18px;
+  border-bottom: 1px solid #ffffff33;
+  color: white;
+}
+
+.close-btn {
+  font-size: 30px;
+  color: white;
+  text-align: right;
+  cursor: pointer;
+}
+
+/* ========== Hero Section ========== */
+.hero {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.text {
+  width: 50%;
+}
+
+.text h1 {
+  font-size: 65px;
+  font-weight: 700;
+}
+
+.text p {
+  font-size: 20px;
+  margin: 15px 0 30px;
+  color: #e0dfff;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.buttons button {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.buttons button:first-child {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.buttons button:last-child {
+  background-color: #2f006b;
+  color: white;
+}
+
+.buttons button:hover {
+  transform: scale(1.05);
+}
+
+/* ========== Hero Image Placeholder ========== */
+.image {
+  width: 45%;
+  height: 400px;
+  background: url('profile.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 20px;
+}
+
+/* ========== Responsive ========== */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .text {
+    width: 100%;
+  }
+
+  .image {
+    width: 100%;
+    height: 300px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
