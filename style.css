@@ -1,185 +1,352 @@
-* {
+*{
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  background-color: #09013f;
 }
 
-body {
-  background-color: #0f003e;
+/* nav bar */
+.nav{
+  width: 100%;
+  height: 60px;
+  background-color: #09013fc0;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.list ul{
+  margin: 10px;
+  list-style: none;
+}
+.list li{
+  font-size: 1.5rem;
+  display: inline;
+  margin: 10px;
+}
+.list li:hover{
+  border: 2px solid white;
+  background-color: rgba(134, 0, 201, 0.381);
+  color: white;
+  border-radius: 10px;
+  padding: 7px;
 }
 
-/* ========== Home Section ========== */
-.home {
-  background-image: url('hero-bg.png');
+/* hero section */
+
+.hero{
+  margin: 0;
+  background: linear-gradient(to bottom, #b801cc00, #09013f51), url("hero-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+.hero h1{
+  color: white;
+  font-size: 6rem;
+  background: none;
+}
+.hero-text{
+  background: none;
+  margin-left: 40px;
+  padding-top: 150px;
+}
+.hero-btn{
+  background: none;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+.hero-btn button{
+  width: 200px;
+  height: 40px;
+  border-radius: 10px;
+  border: 2px solid white;
+  background-color: rgba(95, 0, 102, 0.46);
+  color: white;
+  margin: 10px;
+  font-size: 1rem;
+}
+.hero-btn button:hover{
+  background-color: #09013f51;
+}
+.hero-btn a{
+  background: none;
+}
+
+
+/* about me */
+.about-me{
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background: url(about-me.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about-me h1{
+  background: none;
+  color: white;
+  font-size: 5rem;
+  margin-left: 20px;
+}
+.abt-text{
+  background: #00125999;
+  height: 65%;
+  width: 70%;
+  margin: 40px;
+  border-radius: 20px;
+  padding: 10px;
+  color: wheat;
+  font-size: 2rem;
+}
+.abt-text p{
+  background: none;
+}
+
+/* skills */
+.skills{
+  background: url(skills.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
-  color: #ffffff;
+  width: 100%;
   height: 100vh;
-  padding: 20px 40px;
   display: flex;
-  flex-direction: column;
-}
-
-/* ========== Navbar ========== */
-.nav {
-  display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
-  background: #0f003e;
-  border-radius: 30px;
-  padding: 10px 20px;
-  position: relative;
-  z-index: 2;
+  justify-content: center;
 }
-
-.logo {
-  font-size: 1.5rem;
-  font-weight: 700;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 30px;
-}
-
-.nav-links li {
-  font-size: 1.1rem;
-  cursor: pointer;
-}
-
-/* Hamburger Icon */
-.hamburger {
-  display: none;
-  font-size: 28px;
-  cursor: pointer;
-  color: white;
-}
-
-/* Mobile Nav Menu */
-.mobile-nav {
-  display: none;
-  position: fixed;
-  top: 0;
-  right: 0;
-  height: 100vh;
-  width: 250px;
-  background: #1b014e;
-  padding: 30px 20px;
-  z-index: 5;
-  flex-direction: column;
-  gap: 30px;
-}
-
-.mobile-nav ul {
-  list-style: none;
-  padding: 0;
-}
-
-.mobile-nav ul li {
-  padding: 15px 0;
-  font-size: 18px;
-  border-bottom: 1px solid #ffffff33;
-  color: white;
-}
-
-.close-btn {
-  font-size: 30px;
-  color: white;
-  text-align: right;
-  cursor: pointer;
-}
-
-/* ========== Hero Section ========== */
-.hero {
-  flex: 1;
+.box{
+  width: 30%;
+  height: 30%;
+  border-radius: 10px;
+  background: none;
+  margin: 5px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin-top: 40px;
-}
-
-.text {
-  width: 50%;
-}
-
-.text h1 {
-  font-size: 65px;
-  font-weight: 700;
-}
-
-.text p {
-  font-size: 20px;
-  margin: 15px 0 30px;
-  color: #e0dfff;
-}
-
-.buttons {
-  display: flex;
-  gap: 20px;
+  justify-content: center;
   flex-wrap: wrap;
 }
-
-.buttons button {
-  padding: 12px 24px;
-  font-size: 16px;
-  font-weight: 600;
-  border-radius: 8px;
-  border: none;
-  cursor: pointer;
-  transition: 0.3s ease;
+.box h1{
+  width: 100%;
+  text-align: center;
+  background: none;
+  color: white;
 }
 
-.buttons button:first-child {
-  background: transparent;
+.img{
+  height: 100px;
+  background: none;
+}
+.my-skills{
+  background: #09013f52;
+  font-size: 4rem;
   color: white;
+}
+.box:hover{
+  background-color: #09013f52;
+}
+
+
+/* project */
+.projects{
+  width: 100%;
+  height: 100vh;
+  background: url(project.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.projects h1{
+  background: none;
+  color: white;
+  font-size: 5rem;
+  margin-left: 40px;
+  padding-top: 20px;
+}
+.project-layout{
+  height: 70%;
+  width: 92%;
+  margin: 40px;
+  overflow: auto;
+  background: none;
+  border: 2px solid rgb(255, 173, 255);
+  border-radius: 10px;
+}
+.project{
+  margin: 5px;
+  width: 100%;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+}
+.project-img{
+  width: 25%;
+  height: 200px;
+  border: 2px solid white;
+  border-radius: 10px;
+  background-color: red;
+  margin: 5px;
+}
+.project-desc{
+  width: 60%;
+  height: 200px;
   border: 2px solid white;
 }
 
-.buttons button:last-child {
-  background-color: #2f006b;
-  color: white;
-}
-
-.buttons button:hover {
-  transform: scale(1.05);
-}
-
-/* ========== Hero Image Placeholder ========== */
-.image {
-  width: 45%;
+/* contact me */
+.contact-me{
   height: 400px;
-  background: url('profile.png');
-  background-size: cover;
+  width: 100%;
+  background: url(contact-me.png);
   background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 20px;
+  background-size: cover;
+
+}
+.contact-me h1{
+  text-align: center;
+  font-size: 4rem;
+  color: white;
+  background: none;
+  width: 100%;
+  height: 20%;
+  padding-top: 70px;
+}
+.logo-link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 70px;
+  background: none;
+  margin: 0;
+}
+.logo-link a{
+  background: none;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+.logo-link img{
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  background: none;
 }
 
-/* ========== Responsive ========== */
+
+/* ===== Responsive Styles ===== */
+@media (max-width: 1024px) {
+  .hero h1 {
+    font-size: 4rem;
+  }
+
+  .about-me h1 {
+    font-size: 3.5rem;
+  }
+
+  .abt-text {
+    font-size: 1.5rem;
+    width: 90%;
+  }
+
+  .projects h1 {
+    font-size: 3.5rem;
+  }
+
+  .my-skills {
+    font-size: 3rem;
+  }
+}
+
 @media (max-width: 768px) {
-  .hero {
+  .list ul {
+    display: flex;
     flex-direction: column;
-    text-align: center;
-    gap: 30px;
+    align-items: flex-end;
+    padding: 10px;
   }
 
-  .text {
-    width: 100%;
-  }
-
-  .image {
-    width: 100%;
-    height: 300px;
-  }
-
-  .nav-links {
-    display: none;
-  }
-
-  .hamburger {
+  .list li {
     display: block;
+    margin: 5px 0;
+  }
+
+  .hero-text {
+    padding-top: 100px;
+    margin-left: 20px;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero-btn {
+    margin-left: 20px;
+  }
+
+  .abt-text {
+    font-size: 1.2rem;
+    padding: 20px;
+    width: 90%;
+  }
+
+  .skills {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .box {
+    width: 80%;
+    height: auto;
+  }
+
+  .project {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .project-img,
+  .project-desc {
+    width: 90%;
+    height: 200px;
+  }
+
+  .contact-me h1 {
+    font-size: 2.5rem;
+    padding-top: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-btn button {
+    width: 90%;
+    font-size: 1rem;
+  }
+
+  .abt-text {
+    font-size: 1rem;
+  }
+
+  .my-skills {
+    font-size: 2rem;
+  }
+
+  .logo-link {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .logo-link a {
+    margin: 10px 0;
+  }
+
+  .projects h1,
+  .about-me h1 {
+    font-size: 2.5rem;
   }
 }
